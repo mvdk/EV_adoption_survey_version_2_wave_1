@@ -1,0 +1,37 @@
+{% block title %}
+  {{ Lexicon.quota_full_1 }}
+{% endblock %}
+
+
+{% block content %}
+
+<div>
+  <br><p>{{ Lexicon.quota_full_2 }}</p><br>
+  <br>
+</div>
+
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+  // Get the participant label or value from your code
+  var participantLabel = "{{ participant.label }}";
+  
+  // Get the link from Lexicon  
+  // Construct the URL with the participant variable 
+
+  // quotas: CHANGE THIS TO CORRECT LINK
+  var urlWithParticipant = "https://www.panelservice.com/ps/se.ashx?s=6C2369B275393EA2&pid=uba25045t1&int=so&eid=" + encodeURIComponent(participantLabel);
+  
+  // Create a meta refresh tag dynamically
+  var metaTag = document.createElement('meta');
+  metaTag.setAttribute('http-equiv', 'refresh');
+  metaTag.setAttribute('content', '2; url=' + urlWithParticipant);
+  
+  // Add the meta refresh tag to the head of the document
+  document.head.appendChild(metaTag);
+</script>
+{% endblock %}
+
+
