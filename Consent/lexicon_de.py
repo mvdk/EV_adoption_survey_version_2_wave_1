@@ -7,7 +7,7 @@ class Lexicon:
     stop = "Stopp"
     your_decision = "Ihre Entscheidung"
     mobile_check = "Bitte klicken Sie auf Weiter."
-    mobile = "Leider erlaubt dieses Experiment keine mobilen Browser."
+    mobile = "Leider erlaubt dieses Experiment keine mobilen Browser. Bitte öffnen sie diese Studie auf einem Computer"
     next = "Weiter"
 
     # Consent Text
