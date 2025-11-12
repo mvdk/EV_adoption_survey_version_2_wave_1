@@ -245,29 +245,29 @@ class Demographics_1(Page):
         session = player.session
         participant = player.participant
 
-        if player.gender == 'female' and session.num_female_de >= 226: # define N's for each category, if not defined here there is no quota on it, so every "diverse" person can participate
+        if player.gender == 'female' and session.num_female_de >= 175: # define N's for each category, if not defined here there is no quota on it, so every "diverse" person can participate
             player.quota_full = 1
             participant.quota_full = 1
-        elif player.gender == 'male' and session.num_male_de >= 130:
+        elif player.gender == 'male' and session.num_male_de >= 100:
             player.quota_full = 1
             participant.quota_full = 1
         
         age = player.age
         if 18 <= age <= 34 and session.num_age_18_34_de >= 0:
             player.quota_full = 1
-        elif 35 <= age <= 49 and session.num_age_35_49_de >= 52:
+        elif 35 <= age <= 49 and session.num_age_35_49_de >= 40:
             player.quota_full = 1
-        elif 50 <= age <= 64 and session.num_age_50_64_de >= 123:
+        elif 50 <= age <= 64 and session.num_age_50_64_de >= 95:
             player.quota_full = 1
-        elif 65 <= age <= 100 and session.num_age_65_100_de >= 182:
+        elif 65 <= age <= 100 and session.num_age_65_100_de >= 140:
             player.quota_full = 1
 
         education = player.education
-        if education in ["1","2","3","4","5"] and session.num_education_low_de >= 110:
+        if education in ["1","2","3","4","5"] and session.num_education_low_de >= 85:
             player.quota_full = 1
-        elif education in ["6","7"] and session.num_education_mid_de >= 162:
+        elif education in ["6","7"] and session.num_education_mid_de >= 125:
             player.quota_full = 1
-        elif education in ["8","9","10","11"] and session.num_education_high_de >= 65:
+        elif education in ["8","9","10","11"] and session.num_education_high_de >= 50:
             player.quota_full = 1
 
         participant.quota_full = player.quota_full
