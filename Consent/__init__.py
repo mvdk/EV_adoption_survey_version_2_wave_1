@@ -76,5 +76,5 @@ class MobileRedirect(Page):
 page_sequence = [
     MobileCheck,
     MobileRedirect,
-    introduction_consent
+    #introduction_consent
 ]
