@@ -245,7 +245,7 @@ class Demographics_1(Page):
         session = player.session
         participant = player.participant
 
-        if player.gender == 'female' and session.num_female_de >= 175: # define N's for each category, if not defined here there is no quota on it, so every "diverse" person can participate
+        if player.gender == 'female' and session.num_female_de >= 1: #175: # define N's for each category, if not defined here there is no quota on it, so every "diverse" person can participate
             player.quota_full = 1
             participant.quota_full = 1
         elif player.gender == 'male' and session.num_male_de >= 100:
