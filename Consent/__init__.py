@@ -82,9 +82,16 @@ class MobileCheck(Page):
             'Lexicon': player.session.introLexi,
         }
 
-    def error_message(player: Player, values):
-        if values['is_mobile']:
-            return player.session.introLexi.mobile
+    def before_next_page(player: Player, timeout_happened):
+        # If mobile → immediately redirect to external URL
+        if player.is_mobile:
+            label = player.participant.label
+            url = (
+                "https://www.panelservice.com/ps/se.ashx?"
+                "s=6C2369B275393EA2&pid=uba25045t1&int=so&eid={}"
+            ).format(label)
+
+            raise Redirect(url)
 
 
 page_sequence = [
