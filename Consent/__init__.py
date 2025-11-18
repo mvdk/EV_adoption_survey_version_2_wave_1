@@ -81,7 +81,7 @@ class MobileCheck(Page):
         return {
             'Lexicon': player.session.introLexi,
         }
-
+        
     def before_next_page(player: Player, timeout_happened):
         # If mobile → immediately redirect to external URL
         if player.is_mobile:
