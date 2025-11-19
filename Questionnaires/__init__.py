@@ -371,9 +371,9 @@ class comments(Page):
         education = player.participant.vars.get('education')
 
         # Gender update
-        if gender == 'Female':
+        if gender == 'female':
             session.num_female_de += 1
-        elif gender == 'Male':
+        elif gender == 'male':
             session.num_male_de += 1
 
         # Age bin update
