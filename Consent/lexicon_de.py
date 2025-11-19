@@ -6,7 +6,7 @@ class Lexicon:
     start = "Start"
     stop = "Stopp"
     your_decision = "Ihre Entscheidung"
-    mobile_check = "Bitte klicken Sie auf Weiter. test"
+    mobile_check = "Bitte klicken Sie auf Weiter."
     mobile = "Leider erlaubt dieses Experiment keine mobilen Browser. Bitte schließen Sie diese Seite und öffnen Sie die Studie auf einem Desktop-Computer oder einem Laptop."
     next = "Weiter"
 
