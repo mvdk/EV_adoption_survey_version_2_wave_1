@@ -65,7 +65,7 @@ class MobileRedirect(Page):
 
     @staticmethod
     def vars_for_template(player: Player):
-        participant_id = "test" #player.participant.label or player.participant.code
+        participant_id = player.participant.label
         url = (
             f"https://www.panelservice.com/ps/se.ashx?"
             f"s=6C2369B275393EA2&pid=uba25045t1&int=so&eid={participant_id}"
