@@ -27,7 +27,7 @@ class Lexicon:
     other = "Divers"
     notsay = "Möchte ich nicht angeben"
 
-    education_label = "Bitte geben Sie den höchsten Bildungsabschluss an, den Sie erreicht haben."
+    education_label = "Bitte geben Sie den <u><b>höchsten</b></u> Bildungsabschluss an, den Sie erreicht haben."
     education_DE_1 = "kein Schulabschluss"
     education_DE_2 = "Hauptschulabschluss"
     education_DE_3 = "Realschulabschluss (Mittlere Reife)"
