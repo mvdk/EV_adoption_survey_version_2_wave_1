@@ -15,13 +15,13 @@
 
 {% block scripts %}
 <script>
-  // Get the participant label or value from your code
+  // Get the participant label
   var participantLabel = "{{ participant.label }}";
   
   // Get the link from Lexicon  
   // Construct the URL with the participant variable 
 
-  // quotas: CHANGE THIS TO CORRECT LINK
+  // quotas:
   var urlWithParticipant = "https://www.panelservice.com/ps/se.ashx?s=6C2369B275393EA2&pid=uba25045t1&int=qf&eid=" + encodeURIComponent(participantLabel);
   
   // Create a meta refresh tag dynamically
