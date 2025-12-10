@@ -263,9 +263,9 @@ class Demographics_1(Page):
             player.quota_full = 1
 
         education = player.education
-        if education in ["1","2","3","4"] and session.num_education_low_de >= 85:
+        if education in ["1","2","3","4","5"] and session.num_education_low_de >= 85:
             player.quota_full = 1
-        elif education in ["5","6","7"] and session.num_education_mid_de >= 125:
+        elif education in ["6","7"] and session.num_education_mid_de >= 125:
             player.quota_full = 1
         elif education in ["8","9","10","11"] and session.num_education_high_de >= 50:
             player.quota_full = 1
