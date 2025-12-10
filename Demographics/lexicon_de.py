@@ -49,7 +49,7 @@ class Lexicon:
     income_label = "Wie hoch ist Ihr jährliches <u><b>verfügbares Haushaltseinkommen</b></u> (nach lokalen und staatlichen Steuern)?"
     income_quintile1 = "unter 19.001 €"
     income_quintile2 = "19.001 € bis 28.000 €"
-    income_quintile3 = "33.001 € bis 40.000 €"
+    income_quintile3 = "28.001 € bis 40.000 €"
     income_quintile4 = "40.001 € bis 56.000 €"
     income_quintile5 = "über 56.000 €"
 
